@@ -16,7 +16,8 @@ def connScan(host,port):
 
 def port_scan(Host,ports):
 	try:
-		HostIP= gethostbyname(Host)
+		HostIP = gethostbyname(Host)
+		print 'Scan IP: ' + HostIP
 	except:
 		print 'Host Unknown'
 	setdefaulttimeout(1)
